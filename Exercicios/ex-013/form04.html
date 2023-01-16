@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        fieldset > div {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.js" method="get">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required placeholder="Nome">
+            </div>
+            <div>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="exemplo@gmail.com">
+            </div>
+            <div>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" pattern="!\D {4}-{4}$" placeholder="(xx) xxx-xxx">
+            </div>
+            <!-- Estudar sobre regEx-->
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </fieldset>
+    </form>
+
+    <!--
+        email - Cria um campo que aceita email
+        tel - Cria um campo que aceita telefone
+
+        fieldset - Define um conjunto de campos
+        legend - dá legenda a algo
+    -->
+    
+    
+</body>
+</html>
