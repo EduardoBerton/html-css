@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        form > div {
+            margin: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
+        <div>
+            <label for="iusu"> User: </label>
+            <input type="text" name="usu" id="iusu" required 
+                minlength="5" placeholder="nome de usuário" autocomplete="username" size="10">
+        </div>
+
+        <div>
+            <label for="ipass"> Password: </label>
+            <input type="password" name="pass" id="ipass" required minlength="8" maxlength="16" placeholder="senha" autocomplete="current-password" size="10">
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    <!--
+        <input:text> - Caixa de Texto
+        <input:password> - Caixa de Senha
+        <input:submit> - Botão de Enviar
+        <input:reset> - Botão de Limpar 
+
+        PARÂMETROS:
+
+        required - Informa que o campo é obrigatório;
+        minlenght - Informa a quantidade minima de caracteres;
+        maxlenght - Informa a quantidade máxima de caracteres;
+        autocomplete - regula o autocomplete do navegador;
+        size - Informa o tamanho/quantidade de letras que são visíveis em um campo;
+        palceholder - Informa a mensagem de fundo do campo.
+    
+    -->
+    
+</body>
+</html>
